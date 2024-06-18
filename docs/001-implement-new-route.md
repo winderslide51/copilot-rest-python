@@ -68,7 +68,7 @@ The test is already written in the file `copilot/api/tests.py` and it is failing
 Make sure that your server is not running, and open a terminal and run:
 
 ```bash
-npm test
+python manage.py test
 ```
 
 As you can see the tests are failing with the following :
