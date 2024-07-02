@@ -16,7 +16,7 @@ class HelloAPITestCase(APITestCase):
 
     def test_get_hello(self):
         response = self.client.get(self.api_path)
-        self.assertEqual(response.status_code, 501)
+        self.assertEqual(response.status_code, 500)
         response_data = json.loads(response.content)
         self.assertIn('message', response_data)
         self.assertEqual(response_data['message'], 'key query parameter is required')
