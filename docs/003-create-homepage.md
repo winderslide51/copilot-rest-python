@@ -9,7 +9,30 @@ The page should look like:
 
 <details>
 
-<summary>Possible Flow</summary>
+<summary>Possible Flow 2025</summary>
+
+1. Open Copilot Edits, click on the [+] at the top of the chat to starte new conversation
+
+2. Ask the following question:
+
+  > #codebase Can you guide me to the steps to :
+  > 
+  > - create a new HTML home page for the project
+  > - This page should use the Boostrap style and API
+  > - The API should call the VM rest API define in file:#file:urls.py #file:views.py
+  > - print the list of VMs in a HTML table with alternate colors
+
+2. Review the suggestions
+
+
+3. Approve and test
+
+
+</details>
+
+<details>
+
+<summary>Possible Flow 2024</summary>
 
 1. Open the chat, click on the [+] at the top of the chat to starte new conversation
 
