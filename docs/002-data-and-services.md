@@ -49,7 +49,7 @@ You can find the VMs properties here https://learn.microsoft.com/en-us/azure/vir
 
 2. Ask the following question in the chat
    - _Using the following data, create a JSON Array, with the fields Size, vCPU and Memory. Put the field name in lowercase. The Memory field should be a number without unit (since the default is GiB_
-   - Paste the content from Wikipedia in the chat
+   - Paste the content from MS.com in the chat
    - This should generate a new JSON array
 
    
