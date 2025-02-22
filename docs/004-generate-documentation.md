@@ -13,10 +13,12 @@
 
 2. Highlight get_vms method
 
-3. For a method. (inline) Prompt : “generate doc for this method”
-For a class. (inline) Prompt : “generate doc for this class”
+3. Select the option you prefer:
+  * For a method. (inline) Prompt : “generate doc for this method”
+  
+  * For a class. (inline) Prompt : “generate doc for this class”
 
-For simple and “standard” needs, juste type “/doc”.
+  * For simple and “standard” needs, juste type “/doc”.
 
 </details>
 
