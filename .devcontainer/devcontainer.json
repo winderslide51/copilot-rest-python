@@ -5,7 +5,8 @@
             "extensions": [
                 "GitHub.copilot",
                 "jebbs.plantuml",
-                "eamodio.gitlens"
+                "eamodio.gitlens",
+                "ms-toolsai.jupyter"
             ]        
         }
     },
