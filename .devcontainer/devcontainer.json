@@ -1,9 +1,12 @@
 {
-    "image":"mcr.microsoft.com/devcontainers/universal:2",
+    "image":"mcr.microsoft.com/devcontainers/python:3",
     "customizations": {
         "vscode": {
             "extensions": [
-                "GitHub.copilot"
+                "GitHub.copilot",
+                "jebbs.plantuml",
+                "eamodio.gitlens",
+                "ms-toolsai.jupyter"
             ]        
         }
     },

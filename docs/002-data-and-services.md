@@ -49,7 +49,7 @@ You can find the VMs properties here https://learn.microsoft.com/en-us/azure/vir
 
 2. Ask the following question in the chat
    - _Using the following data, create a JSON Array, with the fields Size, vCPU and Memory. Put the field name in lowercase. The Memory field should be a number without unit (since the default is GiB_
-   - Paste the content from Wikipedia in the chat
+   - Paste the content from MS.com in the chat
    - This should generate a new JSON array
 
    
@@ -166,3 +166,33 @@ Add new tests for the new API that list Microsoft Azure VMs informations.
       ```
 
 </details>
+
+## 003 Generate mock data
+
+Instead of VMs spec, imagine you want to create a list of ten drugs to load in a relational database.
+
+<details>
+<summary>Possible Flow</summary>
+
+1. Create the `copilot/sql/drugs.sql` file
+2. Open Copilot Chat and ask `@workspace add 10 drugs to the drugs table with fields id, name, description and price. use real life drug names`
+
+The new data should look like this:
+
+```sql
+INSERT INTO drugs (id, name, description, price) VALUES (1, 'Aspirin', 'Pain reliever', 5.00);
+INSERT INTO drugs (id, name, description, price) VALUES (2, 'Ibuprofen', 'Anti-inflammatory', 10.00);
+INSERT INTO drugs (id, name, description, price) VALUES (3, 'Paracetamol', 'Pain reliever', 3.00);
+INSERT INTO drugs (id, name, description, price) VALUES (4, 'Amoxicillin', 'Antibiotic', 15.00);
+INSERT INTO drugs (id, name, description, price) VALUES (5, 'Ciprofloxacin', 'Antibiotic', 20.00);
+INSERT INTO drugs (id, name, description, price) VALUES (6, 'Lisinopril', 'For high blood pressure', 25.00);
+INSERT INTO drugs (id, name, description, price) VALUES (7, 'Simvastatin', 'For high cholesterol', 30.00);
+INSERT INTO drugs (id, name, description, price) VALUES (8, 'Amlodipine', 'For high blood pressure', 35.00);
+INSERT INTO drugs (id, name, description, price) VALUES (9, 'Metformin', 'For type 2 diabetes', 40.00);
+INSERT INTO drugs (id, name, description, price) VALUES (10, 'Omeprazole', 'For acid reflux', 45.00);
+```
+
+
+</details>
+
+
