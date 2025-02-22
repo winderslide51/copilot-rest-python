@@ -3,6 +3,7 @@
 1. Generate a functional description of the generated API
 2. Generate the openapi document of the generated API
 3. Modify the README.md to add some documentation
+4. Ask Copilot to create PlantUML Sequence Diagram of the generated endpoint.
 
 
 <details>
@@ -37,5 +38,14 @@
 1. Open Readme.md
 
 2. Review auto completion suggestion
+
+</details>
+
+<details>
+
+<summary>Possible Flow Step 4</summary>
+
+1. Open Copilot chat
+2. @workspace generate a PlantUML sequence diagram of the different apis available withing copilot directory
 
 </details>
