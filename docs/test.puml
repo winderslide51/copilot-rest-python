@@ -1,0 +1,40 @@
+@startuml API Endpoints Flow
+
+actor Client
+participant "Django Server" as Server
+database "vms.json" as DB
+
+== Time API ==
+Client -> Server: GET /api/time/
+Server -> Server: Get current time
+Server --> Client: 200 OK\n{time: "YYYY-MM-DD HH:MM:SS"}
+
+== Hello API ==
+Client -> Server: GET /api/hello/
+Server -> Server: Check 'key' parameter
+alt has key parameter
+    Server --> Client: 200 OK\n{message: "Hello {key}"}
+else missing key parameter
+    Server --> Client: 500 Error\n{message: "key query parameter is required"}
+end
+
+== VMs API ==
+Client -> Server: GET /api/vms/
+Server -> DB: Read vms.json
+alt file found
+    DB --> Server: VM data
+    Server --> Client: 200 OK\n[{size, vcpu, memory}, ...]
+else file not found
+    Server --> Client: 404 Not Found\n{error: "VM data file not found"}
+end
+
+== Homepage ==
+Client -> Server: GET /
+Server -> Server: Render home.html
+Server --> Client: 200 OK\nHTML page
+Client -> Server: GET /api/vms/
+Server -> DB: Read vms.json
+DB --> Server: VM data
+Server --> Client: VM data displayed in table
+
+@enduml
